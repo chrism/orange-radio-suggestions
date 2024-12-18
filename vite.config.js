@@ -12,7 +12,6 @@ export default {
         "suggest-radio": resolve(__dirname, "src/suggest-radio.html"),
         "suggest-podcast": resolve(__dirname, "src/suggest-podcast.html"),
         "report-issue": resolve(__dirname, "src/report-issue.html"),
-        // Add other HTML files as needed
       },
     },
   },
