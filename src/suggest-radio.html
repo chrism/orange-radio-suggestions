@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Orange Radio > Suggest a radio</title>
+    <script type="module" src="./js/main.js"></script>
+  </head>
+  <body>
+    <header class="header-minimized" data-bs-theme="dark">
+      <nav
+        class="navbar navbar-expand-lg"
+        aria-label="Global navigation - Minimized without title example"
+      >
+        <div class="container-xxl">
+          <div class="navbar-brand me-auto me-lg-4">
+            <a class="stretched-link" href="/">
+              <img
+                src="https://boosted.orange.com/docs/5.3/assets/brand/orange-logo.svg"
+                width="50"
+                height="50"
+                alt="Orange Radio Suggestions"
+              />
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="title-bar" data-bs-theme="dark">
+        <div class="container-xxl d-block">
+          <div class="row">
+            <div class="col-sm-12 col-lg-5 offset-lg-3 mb-2">
+              <h1 class="display-1">Suggest a radio</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-xxl pt-4">
+        <div class="row">
+          <div class="col-sm-12 col-lg-5 offset-lg-3">
+            <form class="needs-validation mb-5" novalidate="">
+              <h2 class="display-2">Essential information</h2>
+              <p class="ll-sm h3 mb-4">
+                We will only use your email address to update you on the
+                progress, and never for marketing purposes.
+              </p>
+              <div class="row mb-2">
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label
+                      for="radioName"
+                      id="radioNameLabel"
+                      class="form-label"
+                      >Radio name<span class="visually-hidden">
+                        (required)</span
+                      ></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="radioName"
+                      aria-labelledby="radioNameLabel radioNameFeedback"
+                      required=""
+                    />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div id="radioNameFeedback" class="invalid-feedback">
+                      Please enter a valid radio name.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" id="emailLabel" class="form-label"
+                      >Email<span class="visually-hidden">
+                        (required)</span
+                      ></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      aria-labelledby="emailLabel emailFeedback"
+                      autocomplete="email"
+                      required=""
+                    />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div id="emailFeedback" class="invalid-feedback">
+                      Please provide a valid email.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="selectCountry"
+                      id="selectCountryLabel"
+                      class="form-label"
+                      >Country<span class="visually-hidden">
+                        (required)</span
+                      ></label
+                    >
+                    <select
+                      class="form-select"
+                      id="selectCountry"
+                      aria-labelledby="selectCountryLabel selectCountryFeedback"
+                      autocomplete="country-name"
+                      required=""
+                    >
+                      <option
+                        selected="true"
+                        disabled=""
+                        value=""
+                        aria-hidden="true"
+                      >
+                        Select a country
+                      </option>
+                      <option value="FR">France</option>
+                    </select>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div id="selectCountryFeedback" class="invalid-feedback">
+                      Please select a valid country.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="display-2">Optional information</h2>
+              <p class="ll-sm h3 mb-4">
+                Including these extra details will help us to add the radio to
+                our system more efficiently.
+              </p>
+              <div class="row">
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label
+                      for="streamUrl"
+                      id="streamUrlLabel"
+                      class="form-label"
+                      >Stream URL</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="streamUrl"
+                      aria-labelledby="streamUrlLabel streamUrlFeedback"
+                      required=""
+                    />
+                    <div id="streamUrlHelp" class="form-text">
+                      High quality audio stream ideally in MP3 or AAC format
+                    </div>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div id="streamUrlFeedback" class="invalid-feedback">
+                      Please enter a valid stream URL.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="description"
+                      id="descriptionLabel"
+                      class="form-label"
+                      >Description</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="description"
+                      aria-labelledby="descriptionLabel descriptionFeedback"
+                      required=""
+                    />
+                    <div id="descriptionHelp" class="form-text">
+                      Short description of the radio, for example their brand
+                      strapline
+                    </div>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div id="descriptionFeedback" class="invalid-feedback">
+                      Please enter a valid description.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <h3>Cover image of radio logo</h3>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioRemote"
+                        checked=""
+                      />
+                      <label class="form-check-label" for="flexRadioRemote">
+                        Remote URL
+                      </label>
+                    </div>
+                    <div class="my-2">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="Image-URL"
+                        aria-describedby="Image-URL-Help"
+                        placeholder="https://www.yoursite.com/image.png"
+                      />
+                      <div id="Image-URL-Help" class="form-text">
+                        Max filesize 3MB, JPG or PNG formats, transparency
+                        supported for PNG.
+                      </div>
+                    </div>
+                    <div class="form-check">
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        name="flexRadioDefault"
+                        id="flexRadioLocal"
+                      />
+                      <label class="form-check-label" for="flexRadioLocal">
+                        Local file
+                      </label>
+                    </div>
+                    <div class="mt-2">
+                      <input
+                        type="file"
+                        class="form-control"
+                        id="Local-File-Help"
+                        aria-describedby="Image-URL-Help"
+                        disabled=""
+                      />
+                      <div id="Local-File-Help" class="form-text">
+                        Max filesize 3MB, JPG or PNG formats, transparency
+                        supported for PNG.
+                      </div>
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="selectLanguage"
+                      id="selectLanguageLabel"
+                      class="form-label"
+                      >Language</label
+                    >
+                    <select
+                      class="form-select"
+                      id="selectLanguage"
+                      aria-labelledby="selectLanguageLabel selectLanguageFeedback"
+                      autocomplete="language"
+                    >
+                      <option
+                        selected="true"
+                        disabled=""
+                        value=""
+                        aria-hidden="true"
+                      >
+                        Select a language
+                      </option>
+                      <option value="FR">French</option>
+                    </select>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div id="selectLanguageFeedback" class="invalid-feedback">
+                      Please select a valid language.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="selectGenre"
+                      id="selectGenreLabel"
+                      class="form-label"
+                      >Genre</label
+                    >
+                    <select
+                      class="form-select"
+                      id="selectGenre"
+                      aria-labelledby="selectGenreLabel selectGenreFeedback"
+                      autocomplete="language"
+                    >
+                      <option
+                        selected="true"
+                        disabled=""
+                        value=""
+                        aria-hidden="true"
+                      >
+                        Select a genre
+                      </option>
+                      <option value="all_music">All music</option>
+                    </select>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div id="selectGenreFeedback" class="invalid-feedback">
+                      Please select a valid genre.
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Suggest radio
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

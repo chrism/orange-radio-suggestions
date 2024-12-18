@@ -2,8 +2,17 @@ import { resolve } from "path";
 
 export default {
   root: resolve(__dirname, "src"),
+  base:
+    process.env.NODE_ENV === "production" ? "/orange-radio-suggestions/" : "/",
   build: {
     outDir: "../dist",
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, "src/index.html"),
+        "suggest-radio": resolve(__dirname, "src/suggest-radio.html"),
+        // Add other HTML files as needed
+      },
+    },
   },
   server: {
     port: 8080,
