@@ -36,6 +36,125 @@
           </div>
         </div>
       </div>
+      <div class="container-xxl pt-4">
+        <div class="row">
+          <div class="col-sm-12 col-lg-5 offset-lg-3">
+            <form class="needs-validation mb-5" novalidate="">
+              <h2 class="display-2">Essential information</h2>
+              <p class="ll-sm h3 mb-4">
+                We will only use your email address to update you on the
+                progress, and never for marketing purposes.
+              </p>
+              <div class="row mb-2">
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label
+                      for="podcastTitle"
+                      id="podcastTitleLabel"
+                      class="form-label"
+                      >Podcast title<span class="visually-hidden">
+                        (required)</span
+                      ></label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="podcastTitle"
+                      aria-labelledby="podcastTitleLabel podcastTitleFeedback"
+                      required=""
+                    />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div id="podcastTitleFeedback" class="invalid-feedback">
+                      Please enter a valid radio name.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="email" id="emailLabel" class="form-label"
+                      >Your email<span class="visually-hidden">
+                        (required)</span
+                      ></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      aria-labelledby="emailLabel emailFeedback"
+                      autocomplete="email"
+                      required=""
+                    />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div id="emailFeedback" class="invalid-feedback">
+                      Please provide a valid email.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="selectCountry"
+                      id="selectCountryLabel"
+                      class="form-label"
+                      >Country<span class="visually-hidden">
+                        (required)</span
+                      ></label
+                    >
+                    <select
+                      class="form-select"
+                      id="selectCountry"
+                      aria-labelledby="selectCountryLabel selectCountryFeedback"
+                      autocomplete="country-name"
+                      required=""
+                    >
+                      <option
+                        selected="true"
+                        disabled=""
+                        value=""
+                        aria-hidden="true"
+                      >
+                        Select a country
+                      </option>
+                      <option value="FR">France</option>
+                    </select>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div id="selectCountryFeedback" class="invalid-feedback">
+                      Please select a valid country.
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <h2 class="display-2">Optional information</h2>
+              <p class="ll-sm h3 mb-4">
+                Including these extra details will help us to add the podcast to
+                our system more efficiently.
+              </p>
+              <div class="row">
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label
+                      for="rssFeedUrl"
+                      id="rssFeedUrlLabel"
+                      class="form-label"
+                      >RSS feed URL</label
+                    >
+                    <input
+                      type="text"
+                      class="form-control"
+                      id="rssFeedUrl"
+                      aria-labelledby="rssFeedUrlLabel rssFeedUrlFeedback"
+                      required=""
+                    />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div id="rssFeedUrlFeedback" class="invalid-feedback">
+                      Please enter a valid stream URL.
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Suggest podcast
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
