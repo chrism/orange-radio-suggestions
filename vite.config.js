@@ -2,6 +2,8 @@ import { resolve } from "path";
 
 export default {
   root: resolve(__dirname, "src"),
+  base:
+    process.env.NODE_ENV === "production" ? "/orange-radio-suggestions/" : "/",
   build: {
     outDir: "../dist",
     rollupOptions: {
@@ -10,6 +12,7 @@ export default {
         "suggest-radio": resolve(__dirname, "src/suggest-radio.html"),
         "suggest-podcast": resolve(__dirname, "src/suggest-podcast.html"),
         "report-issue": resolve(__dirname, "src/report-issue.html"),
+        // Add other HTML files as needed
       },
     },
   },
