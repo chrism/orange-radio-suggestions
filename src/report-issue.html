@@ -36,6 +36,93 @@
           </div>
         </div>
       </div>
+      <div class="container-xxl pt-4">
+        <div class="row">
+          <div class="col-sm-12 col-lg-5 offset-lg-3">
+            <form class="needs-validation mb-5" novalidate="">
+              <p class="ll-sm h3 mb-4">
+                We will only use your email address to update you on the
+                progress, and never for marketing purposes.
+              </p>
+              <div class="row">
+                <div class="col-12">
+                  <div class="mb-3">
+                    <label for="email" id="emailLabel" class="form-label"
+                      >Your email<span class="visually-hidden">
+                        (required)</span
+                      ></label
+                    >
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="email"
+                      aria-labelledby="emailLabel emailFeedback"
+                      autocomplete="email"
+                      required=""
+                    />
+                    <div class="valid-feedback">Looks good!</div>
+                    <div id="emailFeedback" class="invalid-feedback">
+                      Please provide a valid email.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label for="message" id="messageLabel" class="form-label"
+                      >Describe the issue</label
+                    >
+                    <textarea
+                      class="form-control"
+                      id="message"
+                      rows="5"
+                      placeholder="Please describe the issue providing as much detail as possible"
+                      aria-labelledby="messageLabel messageFeedback"
+                      required=""
+                    ></textarea>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div id="messageFeedback" class="invalid-feedback">
+                      Please enter a valid message.
+                    </div>
+                  </div>
+                  <div class="mb-3">
+                    <label
+                      for="selectDevice"
+                      id="selectDeviceLabel"
+                      class="form-label"
+                      >Device</label
+                    >
+                    <select
+                      class="form-select"
+                      id="selectDevice"
+                      aria-labelledby="selectDeviceLabel selectDeviceFeedback"
+                      autocomplete="country-name"
+                      required=""
+                    >
+                      <option
+                        selected="true"
+                        disabled=""
+                        value=""
+                        aria-hidden="true"
+                      >
+                        Select a device
+                      </option>
+                      <option value="tv">TV</option>
+                      <option value="iOS">iOS</option>
+                      <option value="android">Android</option>
+                      <option value="web">Web</option>
+                    </select>
+                    <div class="valid-feedback">Looks good!</div>
+                    <div id="selectDeviceFeedback" class="invalid-feedback">
+                      Please select a valid country.
+                    </div>
+                  </div>
+                  <button type="submit" class="btn btn-primary">
+                    Report issue
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
     </main>
   </body>
 </html>
